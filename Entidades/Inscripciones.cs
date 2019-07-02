@@ -15,6 +15,7 @@ namespace RegistroUniversitario.Entidades
         public DateTime Fecha { get; set; }
 
         public decimal Monto { get; set; }
+        public double Balance { get; set; }
 
         public virtual List<InscripcionDetalle> Detalles { get; set; }
 
@@ -23,6 +24,7 @@ namespace RegistroUniversitario.Entidades
             InscripcionId = 0;
             Fecha = DateTime.Now;
             Monto = 0;
+            Balance = 0;
         }
 
     }
