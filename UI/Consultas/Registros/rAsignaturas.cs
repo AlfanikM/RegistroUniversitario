@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RegistroUniversitario.Entidades;
-
+using Entidades;
 namespace RegistroUniversitario.UI.Consultas.Registros
 {
     public partial class rAsignaturas : Form

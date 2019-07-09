@@ -53,14 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\InscripcionesBLL.cs" />
-    <Compile Include="BLL\iRepositorio.cs" />
-    <Compile Include="BLL\Repositorio.cs" />
-    <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\Asignaturas.cs" />
-    <Compile Include="Entidades\Estudiantes.cs" />
-    <Compile Include="Entidades\InscripcionDetalle.cs" />
-    <Compile Include="Entidades\Inscripciones.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +105,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{e1b7c612-dcd3-4f70-b50e-574394e33c78}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f37c51f3-d477-4312-b371-0b2df38fbccc}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

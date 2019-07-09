@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroUniversitario.UI.Consultas.Registros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace RegistroUniversitario
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void RegistroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rEstudiantes re = new rEstudiantes();
+            re.Show();
+
         }
     }
 }
